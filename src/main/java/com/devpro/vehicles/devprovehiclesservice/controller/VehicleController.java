@@ -49,10 +49,8 @@ public class VehicleController {
         if (vehicleMap.containsKey(model)) {
             vehicleMap.put(model, vehicle);
             return ResponseEntity.ok("Success");
-        } else {
-            return new ResponseEntity<>("Failed", HttpStatus.NOT_FOUND);
-
         }
+            return new ResponseEntity<>("Failed", HttpStatus.NOT_FOUND);
 
     }
 
